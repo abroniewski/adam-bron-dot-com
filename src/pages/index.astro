@@ -1,0 +1,16 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Adam Bron',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <BlogLatestPosts
+    title="Notes"
+    information="My personal notes and thoughts."
+  />
+</Layout>
