@@ -18,3 +18,8 @@ pnpm-debug.log*
 # macOS-specific
 .DS_Store
 
+# Obsidian noise
+notes/.obsidian/cache/
+notes/.obsidian/workspace*
+notes/.obsidian/graph.json
+notes/.trash/
