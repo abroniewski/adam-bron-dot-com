@@ -1,6 +1,3 @@
-
----
-
 ## **Introduction and Mission Briefing**
 
 - **Guide [[Ilyana]]** assembles the group:

@@ -45,9 +45,12 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
   const { Content, remarkPluginFrontmatter } = await render(post);
 
   const {
-    publishDate: rawPublishDate = new Date(),
-    updateDate: rawUpdateDate,
+    // Required fields from frontmatter (filtered in load() but TypeScript doesn't know)
     title,
+    date: rawDate,
+    // Normalize date to publishDate for Post type compatibility
+    publishDate: rawPublishDate,
+    updateDate: rawUpdateDate,
     excerpt,
     image,
     tags: rawTags = [],
@@ -58,8 +61,19 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
   } = data;
 
   const slug = cleanSlug(id); // cleanSlug(rawSlug.split('/').pop());
-  const publishDate = new Date(rawPublishDate);
+  
+  // Normalize date to publishDate: use date from frontmatter if available, otherwise use publishDate
+  // Note: We filter out posts without date in load(), so this should always exist
+  if (!rawDate && !rawPublishDate) {
+    throw new Error(`Post ${id} is missing required date field`);
+  }
+  const publishDate = rawDate ? new Date(rawDate) : rawPublishDate ? new Date(rawPublishDate) : new Date();
   const updateDate = rawUpdateDate ? new Date(rawUpdateDate) : undefined;
+
+  // Title should always exist after filtering, but add defensive check
+  if (!title) {
+    throw new Error(`Post ${id} is missing required title field`);
+  }
 
   const category = rawCategory
     ? {
@@ -102,11 +116,25 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
 
 const load = async function (): Promise<Array<Post>> {
   const posts = await getCollection('post');
-  const normalizedPosts = posts.map(async (post) => await getNormalizedPost(post));
+  
+  // Filter by minimum frontmatter requirements (title, date, public: true)
+  // Only files with public: true are published - files without public or with public: false are excluded
+  // Files without all required fields are rejected (not published)
+  const validPosts = posts.filter((post) => {
+    const hasTitle = post.data.title !== undefined && post.data.title !== null && post.data.title !== '';
+    const hasDate = post.data.date !== undefined && post.data.date !== null;
+    // Only publish if public is explicitly true - files without public or with public: false are excluded
+    const isPublic = post.data.public === true;
+    const isDraft = post.data.draft === true;
+    
+    // All three required fields must be present and valid, and public must be exactly true
+    return hasTitle && hasDate && isPublic && !isDraft;
+  });
+
+  const normalizedPosts = validPosts.map(async (post) => await getNormalizedPost(post));
 
   const results = (await Promise.all(normalizedPosts))
-    .sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf())
-    .filter((post) => !post.draft);
+    .sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf());
 
   return results;
 };

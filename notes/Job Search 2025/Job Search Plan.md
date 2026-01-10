@@ -1,3 +1,11 @@
+---
+title: 2025 Job Search Plan
+date: 2025-01-20
+tags: [planning, reflection]
+energy: chaotic
+public: true
+---
+
 ## What's the process?
 Find an opportunity
 Apply for it

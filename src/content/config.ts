@@ -47,19 +47,37 @@ const metadataDefinition = () =>
     .optional();
 
 const postCollection = defineCollection({
-  loader: glob({ pattern: ['*.md', '*.mdx'], base: 'src/data/post' }),
+  loader: glob({ 
+    pattern: ['**/*.md', '**/*.mdx'], 
+    base: 'notes'
+  }),
   schema: z.object({
-    publishDate: z.date().optional(),
+    // Minimum frontmatter - marked optional to allow files without frontmatter to load,
+    // but filtered out in load() function if missing
+    title: z.string().optional(),
+    date: z
+      .union([
+        z.date(),
+        z.string().transform((val) => {
+          const parsed = new Date(val);
+          if (isNaN(parsed.getTime())) {
+            throw new Error(`Invalid date format: ${val}`);
+          }
+          return parsed;
+        }),
+      ])
+      .optional(),
+    public: z.boolean().optional(),
+
+    // Optional fields
     updateDate: z.date().optional(),
     draft: z.boolean().optional(),
-
-    title: z.string(),
     excerpt: z.string().optional(),
     image: z.string().optional(),
-
     category: z.string().optional(),
     tags: z.array(z.string()).optional(),
     author: z.string().optional(),
+    energy: z.string().optional(),
 
     metadata: metadataDefinition(),
   }),

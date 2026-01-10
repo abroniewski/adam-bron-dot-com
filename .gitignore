@@ -31,3 +31,6 @@ notes/.obsidian/community-plugins.json
 notes/.obsidian/core-plugins.json
 notes/.trash/
 notes/.obsidian/plugins/*/data.json
+
+# Copied images (source is in images/ directory, copied during build)
+public/images/
