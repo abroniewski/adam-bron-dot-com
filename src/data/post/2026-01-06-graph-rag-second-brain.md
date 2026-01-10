@@ -20,3 +20,4 @@ tags: [making, systems, llm, sales]
   - Testing/building with a smaller sample (single transcript) will make it easier to get fundamental parsing correct first
 - Next steps: run the entire pipeline and test some queries to see what comes out of it
 
+
