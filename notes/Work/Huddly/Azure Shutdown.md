@@ -345,9 +345,9 @@ Outcome: Codebases are no longer linked to Azure Deployment Center and all impor
 
 {
 
-"name": "OPENAI_API_KEY",
+ "name": "OPENAI_API_KEY",
 
-"value": "OpenAI-api-key",
+"value": "OPENAI-API-KEY-HERE",
 
 "slotSetting": false
 
