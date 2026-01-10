@@ -275,7 +275,7 @@ export const unpicOptimizer: ImagesOptimizer = async (image, breakpoints, width,
 export async function getImagesOptimized(
   image: ImageMetadata | string,
   {
-    src: _,
+    src: _, // src is ignored - we use the image parameter instead
     width,
     height,
     sizes,
