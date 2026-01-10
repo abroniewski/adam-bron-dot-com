@@ -33,7 +33,7 @@ Outcome: Codebases are no longer linked to Azure Deployment Center and all impor
 	
 	"name": "APPLICATIONINSIGHTS_CONNECTION_STRING",
 	
-	"value": "InstrumentationKey=7018075f-4521-45ef-ac2f-84d1dfdddf85;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/;LiveEndpoint=https://westus2.livediagnostics.monitor.azure.com/;ApplicationId=a5693e2a-3f98-4585-850f-acf5ce7e0615",
+	"value": "InstrumentationKey=KEY-HERE;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/;LiveEndpoint=https://westus2.livediagnostics.monitor.azure.com/;ApplicationId=APPLICATION-ID-HERE",
 	
 	"slotSetting": false
 	
@@ -73,7 +73,7 @@ Outcome: Codebases are no longer linked to Azure Deployment Center and all impor
 	
 	"name": "AZURE_STORAGE_ACCOUNT_NAME",
 	
-	"value": "deepconnectfilestorage",
+	"value": "REPLACE-WITH-ACTUAL-STORAGE-KEY",
 	
 	"slotSetting": false
 	
@@ -217,7 +217,7 @@ Outcome: Codebases are no longer linked to Azure Deployment Center and all impor
 
 "name": "APPLICATIONINSIGHTS_CONNECTION_STRING",
 
-"value": "InstrumentationKey=9c44e504-33c0-4120-9af6-b23284ed5b0a;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/;LiveEndpoint=https://westus2.livediagnostics.monitor.azure.com/;ApplicationId=APPLICATION-ID-HERE",
+"value": "InstrumentationKey=INSTRUMENT-KEY-HERE;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/;LiveEndpoint=https://westus2.livediagnostics.monitor.azure.com/;ApplicationId=APPLICATION-ID-HERE",
 
 "slotSetting": false
 
@@ -247,7 +247,7 @@ Outcome: Codebases are no longer linked to Azure Deployment Center and all impor
 
 "name": "AZURE_STORAGE_ACCOUNT_NAME",
 
-"value": "deepconnectfilestorage",
+"value": "REPLACE-WITH-ACTUAL-STORAGE-KEY",
 
 "slotSetting": false
 
