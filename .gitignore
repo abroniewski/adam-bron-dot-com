@@ -22,4 +22,12 @@ pnpm-debug.log*
 notes/.obsidian/cache/
 notes/.obsidian/workspace*
 notes/.obsidian/graph.json
+notes/.obsidian/hotkeys.json
+notes/.obsidian/workspace-mobile.json
+notes/.obsidian/workspace.json
+notes/.obsidian/app.json
+notes/.obsidian/appearance.json
+notes/.obsidian/community-plugins.json
+notes/.obsidian/core-plugins.json
 notes/.trash/
+notes/.obsidian/plugins/*/data.json
