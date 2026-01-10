@@ -4,21 +4,34 @@
     "post": {
       "type": "object",
       "properties": {
-        "publishDate": {
+        "title": {
+          "type": "string"
+        },
+        "date": {
           "anyOf": [
             {
-              "type": "string",
-              "format": "date-time"
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "integer",
+                  "format": "unix-time"
+                }
+              ]
             },
             {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "integer",
-              "format": "unix-time"
+              "type": "string"
             }
           ]
+        },
+        "public": {
+          "type": "boolean"
         },
         "updateDate": {
           "anyOf": [
@@ -39,9 +52,6 @@
         "draft": {
           "type": "boolean"
         },
-        "title": {
-          "type": "string"
-        },
         "excerpt": {
           "type": "string"
         },
@@ -58,6 +68,9 @@
           }
         },
         "author": {
+          "type": "string"
+        },
+        "energy": {
           "type": "string"
         },
         "metadata": {
@@ -149,9 +162,6 @@
           "type": "string"
         }
       },
-      "required": [
-        "title"
-      ],
       "additionalProperties": false
     }
   },

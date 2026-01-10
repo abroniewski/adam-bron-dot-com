@@ -1,0 +1,92 @@
+name: Build and Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run linter
+        run: npm run lint
+      
+      - name: Build application
+        run: npm run build
+      
+      - name: Verify FTP secrets
+        run: |
+          if [ -z "${{ secrets.FTP_SERVER }}" ]; then
+            echo "❌ Error: FTP_SERVER secret is not set"
+            exit 1
+          fi
+          if [ -z "${{ secrets.FTP_USERNAME }}" ]; then
+            echo "❌ Error: FTP_USERNAME secret is not set"
+            exit 1
+          fi
+          if [ -z "${{ secrets.FTP_PASSWORD }}" ]; then
+            echo "❌ Error: FTP_PASSWORD secret is not set"
+            exit 1
+          fi
+          echo "✅ All FTP secrets are set"
+          
+          # Debug: Show server value characteristics (without exposing the actual value)
+          SERVER="${{ secrets.FTP_SERVER }}"
+          echo "📝 Server value length: ${#SERVER} characters"
+          echo "📝 Server value (first/last chars only): ${SERVER:0:3}...${SERVER: -3}"
+          echo "📝 Server value starts with 'ftp': $([ "${SERVER:0:3}" = "ftp" ] && echo 'yes' || echo 'no')"
+          echo "📝 Server value contains spaces: $([ "$SERVER" != "${SERVER// /}" ] && echo 'YES - PROBLEM!' || echo 'no')"
+          echo "📝 Server value contains newlines: $([ "$SERVER" != "${SERVER//$'\n'/}" ] && echo 'YES - PROBLEM!' || echo 'no')"
+      
+      - name: Test DNS resolution
+        run: |
+          SERVER="${{ secrets.FTP_SERVER }}"
+          echo "🔍 Testing DNS resolution..."
+          
+          # Remove any protocol prefix if present
+          CLEAN_SERVER=$(echo "$SERVER" | sed 's|^ftp://||' | sed 's|^ftps://||' | sed 's|://.*||')
+          echo "🔍 Server hostname: ${CLEAN_SERVER:0:10}... (masked)"
+          
+          # Test DNS lookup (non-blocking - just for info)
+          if nslookup "$CLEAN_SERVER" 2>&1 | head -5; then
+            echo "✅ DNS lookup successful"
+          else
+            echo "⚠️  DNS lookup failed - will attempt connection anyway"
+            echo "💡 If connection fails, verify FTP_SERVER secret is correct"
+          fi
+      
+      - name: Deploy to cPanel via FTP/FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: ${{ secrets.FTP_PORT || '21' }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_SERVER_DIR || '/' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.DS_Store
+            **/api/config.local.php
+            **/.ftp-deploy-sync-state.json
+          dry-run: false
+          dangerous-clean-slate: false
+
