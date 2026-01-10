@@ -1,0 +1,4 @@
+- lawful good half-orc scout
+- bright, sharp sense of humour
+- political enemies in town and lacks full support of town militia
+- 

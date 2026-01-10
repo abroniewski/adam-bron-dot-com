@@ -1,0 +1,5 @@
+- Moon elf druid
+- Female
+- Backstabbed by [[Vaelish Gant]] from the [[Arcane Brotherhood]]
+- Tried to protect an area of untapped [[Chardalyn]] from [[Auril]]'s [[Frost Druids]] and the Duerger
+- [[Arcane Brotherhood]] wanted to weaponize the untapped [[Chardalyn]]

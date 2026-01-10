@@ -1,0 +1,5 @@
+- blames ten-towns for death of twin sister, Vurnis, also a frost druid.
+- Vurnis was killed by hunters near [[Lonelywood]]
+- hides her sisters corpse in the sarcophagus
+- has awakened many beasts and platns throughout Icewind Dale. Some of them (like White Moose) are hell bent. Others aren't. She complained about the scrupules of the plesiosaurus she awakened in [[Maer Dualdon]].
+- Used moonbeam spells to trigger the moon dial, enabling the white moose to scry on loggers and hunters using the magic mirror.

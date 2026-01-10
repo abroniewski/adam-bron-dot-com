@@ -1,0 +1,37 @@
+# Meeting Notes
+- Go to mine entrance
+	- The crew cleared up the reason they are going is to look for Chardalyn crystals to see if they can be used to help lift the curse. Also looking to help Mand to clear out Kobolds 
+- Sam see's tracks, rodent and reptiles
+- Emerald investigates more closely to see the rodent tracks are fresh
+- Exploring cave system
+	- Kai loots, uses inspiration to find small carved figuring of dog with crystals in eyes
+	- Kai also takes a ragged mining cape
+- Go across wooden planks.
+	- Sam uses gloves to help
+	- All others cautious
+	- Myra rolls 1 and the board creaks, but nothing happens
+	- Smokey goes over solo and is developing close relationship with Sam
+- Go down bucket
+	- Kai first
+	- all down after
+	- Kai sees tracks, Sam confirms which direction they went
+- Em turns into giant spider, climbs on roof and discovers the kobolds
+- Comes back to tell others what she saw
+- Crew sneaks up on Kobalds who were poking at giant rat to make sure it was dead
+	- Smol and Grek
+	- Sam almost kills both of them
+	- Smol dies first (Kai's ice knife), Grek is killed by Em's spear.
+		- Grek had a note that he was celebrating his 2nd wedding anniversary with his wife Janice
+- Crew sets up a scene as a warning for others
+	- Myra doesn't want to kill things that are not evil
+- Crew goes further down, Myra and Kai discover wounded duerger
+- Sam croses over, but Em is taken by Grell (poisoined and grappled)
+- Crew goes back to find her, follow trail of hair tufts left by smokey.
+- Myra tries to shoot through tenticles (misses)
+- Sam uses magic missle, cuts Em down
+- Em tries thorn whip and misses
+- Grell grabs Sam who went over to Em
+- Myra Charms the grell and then uses friend -> mimes what she wants the Grell to do. It drops Sam.
+- Myra explains her plan to reconvene and try to hit it all at once.
+- Grell moves out and over the crew into the center of the shaft.
+	- Grell is feeling overwhlemed and looking to retreat (crew doesnt know this)

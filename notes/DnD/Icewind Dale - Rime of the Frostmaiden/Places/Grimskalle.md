@@ -1,0 +1,1 @@
+a 600 ft tall mountain of glacial isce, its peak carved to resemble a gigantci skull wearing a corwn. Weaving up the mountain's southern slope are enormous stairs hewn from the ice. These steps, which extend from the base of the mountain to the base of the fortress, were clearly made for giants.

@@ -1,0 +1,5 @@
+---
+aliases:
+  - Strixhaven
+  - Strixhaven University
+---

@@ -1,0 +1,8 @@
+"Moving Data Insights took the time to deeply understand our business domain, translating our audit methodology into a fit-for-purpose algorithm and scoring system. Their expertise in bridging business needs with AI-driven analytics enabled us to prioritize audits more effectively and streamline our risk assessment approach. The solution they built is now an integral part of our workflow, helping us focus our efforts where they matter most."
+- Owner and Principle Consultant, Risk & Compliance Firm
+
+"In just one week, Moving Data Insights took our challenge and ran with it—independently identifying, validating, and analyzing a novel data source to measure digital billboard exposure. They approached the project with creativity and agility, delivering a thorough, data-driven conclusion with actionable recommendations for next steps. Their ability to ideate and execute with minimal supervision made this an incredibly efficient collaboration."
+- Director of Analytics, Digital Marketing Firm
+
+"As a startup founder, I needed more than just technical execution—I needed a partner to help shape my vision. Moving Data Insights worked directly with me to clarify our product strategy, rapidly test ideas, and provide fast feedback on feasibility. Their expertise in AI helped us understand our competitive positioning and refine our roadmap. This partnership is just getting started—Moving Data Insights is our go-to technical team for building the core of our software platform."
+- CEO, SaaS Venture Platform

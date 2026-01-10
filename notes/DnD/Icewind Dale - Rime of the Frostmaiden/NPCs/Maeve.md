@@ -1,0 +1,1 @@
+[[Kai]]'s grandmother. Worked with Strixthaven to get Kai onto the trip to investigate [[Chardalyn]] and its effects on the court/throne

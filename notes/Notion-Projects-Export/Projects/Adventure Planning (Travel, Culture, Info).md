@@ -1,0 +1,6 @@
+|Name|Created|Tags|URL|Updated|
+|---|---|---|---|---|
+|Arsene 50|"September 15, 2021 8:10 AM"|"belgium, ideas, tickets"|https://arsene50.brussels/en|"September 15, 2021 8:10 AM"|
+|Centre for Fine Arts | Bozar Brussels|"September 15, 2021 8:10 AM"|"belgium, ideas"|https://www.bozar.be/en|"September 15, 2021 8:10 AM"|
+|Culture - ULB|"September 15, 2021 8:07 AM"|"discounts, ideas, plans"|https://www.ulb.be/fr/culture|"September 15, 2021 8:07 AM"|
+|ULB Info|"September 15, 2021 8:03 AM"|,,"September 15, 2021 8:03 AM
