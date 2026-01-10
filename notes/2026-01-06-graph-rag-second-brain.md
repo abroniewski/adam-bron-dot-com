@@ -1,8 +1,9 @@
 ---
 title: Graph RAG second brain
-date: 2026-01-xx
+date: 2026-01-06
 tags: [making, systems, llm, sales]
 energy: high
+public: true
 ---
 
 [Building a Graph-Based System to Enhance Sales Insights and Client Interactions] https://www.loom.com/share/96e5b6cab3884177b76113ff37023600
