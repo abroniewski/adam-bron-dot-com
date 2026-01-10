@@ -1,4 +1,13 @@
-
+---
+title: MVP WAGO Integrated Sales Expert
+date: 2025-08-18
+tags:
+  - llm
+  - MVP
+  - vibe-code
+energy: driven
+public: true
+---
 **Date:** 18 August 2025  
 **Prepared for:** Tyrone Visser - WAGO 
 **Prepared by:** Adam Broniewski - Moving Data Insights

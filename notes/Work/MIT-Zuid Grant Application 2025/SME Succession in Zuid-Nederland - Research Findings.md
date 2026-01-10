@@ -1,4 +1,10 @@
-
+---
+title: SME Succession in Zuid-Nederland - Research Findings
+date: 2025-04-08
+tags: [funding, research, process]
+energy: organized
+public: true
+---
 # APPENDIX: SME Succession in Zuid-Nederland: Research Findings
 
 ## Background & Regional Relevance

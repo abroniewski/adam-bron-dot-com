@@ -1,3 +1,12 @@
+---
+title: The Plan for 2024 and Beyond
+date: 2023-01-12
+tags: [planning, reflection, relationship]
+energy: confident
+public: true
+---
+
+
 What is this document? It's a place to ground some questions and discussion points to get aligned on things that may have drifted living apart for an extended period of time. It's also a way to get on the same page as to how re-integration might look, and what we want our future to look like.
 
 The idea is that we would both have clarity on:

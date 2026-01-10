@@ -1,4 +1,11 @@
-10 January 2023
+---
+title: Sleep Goal
+date: 2023-01-10
+tags: [planning, details, sleep]
+energy: mellow
+public: true
+---
+
 ## Why?
 Joy, focus, accomplishment, gratitude. When I am well rested, it's easier for me to make choices, prioritize my work and stay focused on the things that are important to me. I am able to make progress in areas of my life that I choose (school, work, physical fitness, play, exploring nature). I am able to side-step distractions and shiny objects along my path that can get in the way. I am more naturally emotionally available to the people around me, and easily feel gratitude for everything. I stay present in the moment and experience life to a full capacity.
 

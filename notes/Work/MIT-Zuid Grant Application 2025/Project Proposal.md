@@ -1,4 +1,10 @@
-
+---
+title: Huddly AI Proposal for MIT Zuid Feasibility Study
+date: 2025-04-08
+tags: [funding, prompts, process]
+energy: organized
+public: true
+---
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
 <div align="center">

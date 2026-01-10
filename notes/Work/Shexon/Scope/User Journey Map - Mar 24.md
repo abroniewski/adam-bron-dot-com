@@ -1,3 +1,13 @@
+---
+title: Career Building App - User Journey Map
+date: 2025-02-03
+tags:
+  - planning
+  - user-journey
+  - stages
+energy: focused
+public: true
+---
 This **comprehensive user journey map** is organised into two parts:
 
 1. **Progressive (Stage-Based) Steps** – The logical flow a user follows as they move from “I’m exploring careers” to “I’ve accepted an offer." The user typically traverses these 7 steps in sequence—though they might revisit “Skill Building” if an interview highlights a gap, or redo “Applying” if rejections pile up.

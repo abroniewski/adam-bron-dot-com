@@ -1,3 +1,11 @@
+---
+title: Startup Skill Evaluation
+date: 2022-12-29
+tags: [reflection, decision, career]
+energy: thoughtful
+public: true
+---
+
 | Skill                     | Evidence                                                                                                                                                                                                                                                                           |     |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
 | Resourcefulness           | Brainstorming solutions. Emergency repsonse projects, return to service iterations (x16). Fixing items around the house or finding hacks to do things cheaper (moto cycle luggage rack). Setting up brand for personal branding expert with U of C.                                |     |

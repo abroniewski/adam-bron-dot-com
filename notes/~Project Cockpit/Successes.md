@@ -1,3 +1,10 @@
+---
+title: 2025 Successes
+date: 2025-08-08
+tags: [reflection, process, tracking]
+energy: mellow
+public: true
+---
 ## Jan 24 2025
 1. Drafted optimized Data Science CV
 2. Reached out to ITCE connections for help
