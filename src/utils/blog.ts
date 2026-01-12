@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import type { Post } from '~/types';
 import { APP_BLOG } from 'astrowind:config';
-import { cleanSlug, trimSlash, BLOG_BASE, POST_PERMALINK_PATTERN, CATEGORY_BASE, TAG_BASE } from './permalinks';
+import { cleanSlug, trimSlash, POST_PERMALINK_PATTERN, CATEGORY_BASE, TAG_BASE } from './permalinks';
 
 const generatePermalink = async ({
   id,
@@ -40,16 +40,53 @@ const generatePermalink = async ({
     .join('/');
 };
 
+// Extract first two lines of text from markdown content
+const extractTextPreview = (body: string | undefined): string | undefined => {
+  if (!body) return undefined;
+  
+  // Split by newlines and filter out empty lines and markdown headers/images/links
+  const lines = body
+    .split('\n')
+    .map(line => line.trim())
+    .filter(line => {
+      // Skip empty lines, headers, images, and links
+      if (!line) return false;
+      if (line.startsWith('#') || line.startsWith('##') || line.startsWith('###')) return false;
+      if (line.startsWith('![') || line.startsWith('[')) return false;
+      if (line.startsWith('```')) return false;
+      return true;
+    })
+    .slice(0, 2); // Take first two non-empty content lines
+  
+  if (lines.length === 0) return undefined;
+  
+  // Join lines and clean up markdown syntax
+  let preview = lines.join(' ');
+  
+  // Remove markdown formatting
+  preview = preview
+    .replace(/\*\*(.*?)\*\*/g, '$1') // Bold
+    .replace(/\*(.*?)\*/g, '$1') // Italic
+    .replace(/\[(.*?)\]\(.*?\)/g, '$1') // Links
+    .replace(/`(.*?)`/g, '$1') // Code
+    .trim();
+  
+  // Limit length
+  if (preview.length > 200) {
+    preview = preview.substring(0, 197) + '...';
+  }
+  
+  return preview || undefined;
+};
+
 const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> => {
-  const { id, data } = post;
+  const { id, data, body } = post;
   const { Content, remarkPluginFrontmatter } = await render(post);
 
   const {
     // Required fields from frontmatter (filtered in load() but TypeScript doesn't know)
     title,
     date: rawDate,
-    // Normalize date to publishDate for Post type compatibility
-    publishDate: rawPublishDate,
     updateDate: rawUpdateDate,
     excerpt,
     image,
@@ -62,12 +99,12 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
 
   const slug = cleanSlug(id); // cleanSlug(rawSlug.split('/').pop());
   
-  // Normalize date to publishDate: use date from frontmatter if available, otherwise use publishDate
+  // Normalize date to publishDate: use date from frontmatter
   // Note: We filter out posts without date in load(), so this should always exist
-  if (!rawDate && !rawPublishDate) {
+  if (!rawDate) {
     throw new Error(`Post ${id} is missing required date field`);
   }
-  const publishDate = rawDate ? new Date(rawDate) : rawPublishDate ? new Date(rawPublishDate) : new Date();
+  const publishDate = new Date(rawDate);
   const updateDate = rawUpdateDate ? new Date(rawUpdateDate) : undefined;
 
   // Title should always exist after filtering, but add defensive check
@@ -87,6 +124,9 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     title: tag,
   }));
 
+  // Extract text preview if excerpt is missing
+  const textPreview = !excerpt ? extractTextPreview(body) : undefined;
+
   return {
     id: id,
     slug: slug,
@@ -97,6 +137,7 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
 
     title: title,
     excerpt: excerpt,
+    textPreview: textPreview,
     image: image,
 
     category: category,
@@ -144,12 +185,10 @@ let _posts: Array<Post>;
 /** */
 export const isBlogEnabled = APP_BLOG.isEnabled;
 export const isRelatedPostsEnabled = APP_BLOG.isRelatedPostsEnabled;
-export const isBlogListRouteEnabled = APP_BLOG.list.isEnabled;
 export const isBlogPostRouteEnabled = APP_BLOG.post.isEnabled;
 export const isBlogCategoryRouteEnabled = APP_BLOG.category.isEnabled;
 export const isBlogTagRouteEnabled = APP_BLOG.tag.isEnabled;
 
-export const blogListRobots = APP_BLOG.list.robots;
 export const blogPostRobots = APP_BLOG.post.robots;
 export const blogCategoryRobots = APP_BLOG.category.robots;
 export const blogTagRobots = APP_BLOG.tag.robots;
@@ -202,12 +241,37 @@ export const findLatestPosts = async ({ count }: { count?: number }): Promise<Ar
 };
 
 /** */
-export const getStaticPathsBlogList = async ({ paginate }: { paginate: PaginateFunction }) => {
-  if (!isBlogEnabled || !isBlogListRouteEnabled) return [];
-  return paginate(await fetchPosts(), {
-    params: { blog: BLOG_BASE || undefined },
-    pageSize: blogPostsPerPage,
-  });
+export const getRandomPost = async (): Promise<Post | null> => {
+  const posts = await fetchPosts();
+  
+  if (!posts || posts.length === 0) {
+    return null;
+  }
+  
+  const randomIndex = Math.floor(Math.random() * posts.length);
+  return posts[randomIndex];
+};
+
+/** */
+export const getRandomPosts = async (count: number, excludePost?: Post): Promise<Array<Post>> => {
+  const posts = await fetchPosts();
+  
+  if (!posts || posts.length === 0) {
+    return [];
+  }
+  
+  // Filter out the current post if provided
+  const availablePosts = excludePost 
+    ? posts.filter(post => post.id !== excludePost.id)
+    : posts;
+  
+  if (availablePosts.length === 0) {
+    return [];
+  }
+  
+  // Shuffle and take the requested count
+  const shuffled = [...availablePosts].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, Math.min(count, shuffled.length));
 };
 
 /** */

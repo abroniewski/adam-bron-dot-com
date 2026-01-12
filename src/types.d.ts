@@ -20,6 +20,8 @@ export interface Post {
   title: string;
   /** Optional summary of post content. */
   excerpt?: string;
+  /** Text preview extracted from content (first two lines) if excerpt is missing */
+  textPreview?: string;
   /**  */
   image?: ImageMetadata | string;
 

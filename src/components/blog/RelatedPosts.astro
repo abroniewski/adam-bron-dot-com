@@ -1,12 +1,10 @@
 ---
 import { APP_BLOG } from 'astrowind:config';
 
-import { getRelatedPosts } from '~/utils/blog';
-import Grid from '~/components/blog/Grid.astro';
-import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
-import Button from '~/components/ui/Button.astro';
+import { getRandomPosts } from '~/utils/blog';
+import { getFormattedDate } from '~/utils/utils';
+import { getPermalink } from '~/utils/permalinks';
 import type { Post } from '~/types';
-import { getBlogPermalink } from '~/utils/permalinks';
 
 export interface Props {
   post: Post;
@@ -14,23 +12,34 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const relatedPosts = post.tags ? await getRelatedPosts(post, 4) : [];
+const randomPosts = await getRandomPosts(4, post);
+
+// Format date for display (YYYY-MM-DD)
+const formatArchiveDate = (date: Date): string => {
+  return date.toISOString().split('T')[0];
+};
 ---
 
 {
-  APP_BLOG.isRelatedPostsEnabled && relatedPosts.length ? (
-    <WidgetWrapper containerClass="pt-0 md:pt-0 lg:pt-0">
-      <div class="flex flex-col lg:justify-between lg:flex-row mb-8">
-        <div class="md:max-w-sm">
-          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none group font-heading mb-2">
-            Related notes
-          </h2>
-          <Button variant="link" href={getBlogPermalink()}>
-            View all notes »
-          </Button>
-        </div>
+  APP_BLOG.isRelatedPostsEnabled && randomPosts.length > 0 ? (
+    <section class="max-w-2xl mx-auto px-6 sm:px-6 pt-8 pb-16">
+      <h3 class="text-sm font-medium text-muted dark:text-slate-500 mb-2 tracking-wide">
+        Other Interesting Curiosities
+      </h3>
+      <div class="border-t border-gray-200 dark:border-slate-700 mb-4"></div>
+      <div class="space-y-1">
+        {randomPosts.map((randomPost) => (
+          <a
+            href={getPermalink(randomPost.permalink, 'post')}
+            class="block text-default hover:text-primary transition-colors py-1"
+          >
+            <span class="text-sm text-muted dark:text-slate-500 font-mono mr-4">
+              {formatArchiveDate(randomPost.publishDate)}
+            </span>
+            <span class="text-base">{randomPost.title}</span>
+          </a>
+        ))}
       </div>
-      <Grid posts={relatedPosts} />
-    </WidgetWrapper>
+    </section>
   ) : null
 }
