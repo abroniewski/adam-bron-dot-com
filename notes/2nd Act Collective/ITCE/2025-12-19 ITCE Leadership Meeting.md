@@ -109,7 +109,7 @@ Jan
 - After that, Marsha to talk about September 2027
 - Geert to choose production for May/June 2027
 	- Same shepard alive the mind
-	- Mouillard play
+	- Mouillard play -> King Leere
 	- midsummer nights dream
 - Jan send out datumprikker for a multiyear planning
 	- Who should be involved? More people from within the community
