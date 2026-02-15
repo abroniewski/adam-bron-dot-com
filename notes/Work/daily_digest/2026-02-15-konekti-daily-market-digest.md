@@ -1,5 +1,5 @@
 ---
-title: Konekti Daily Market Digest - 15 Feb 2026 (Revised)
+title: Konekti Daily Market Digest - 15 Feb 2026
 date: 2026-02-15T08:00:00+01:00
 public: true
 draft: false
@@ -11,8 +11,10 @@ tags:
   - enterprise-analytics
   - competitors
   - partners
-excerpt: Daily strategic digest with inline citations, freshness-first scanning, and cross-source synthesis for Konekti.
+excerpt: Daily strategic digest with freshness-first scanning, and cross-source synthesis for Konekti.
 ---
+
+## Summary
 
 - Enterprise platforms are moving in the same direction: new AI features are being shipped together with stronger governance and security controls.
 - The market conversation is shifting from "visibility" to "intervention", meaning teams are expected to not just detect issues but act faster when issues appear.
