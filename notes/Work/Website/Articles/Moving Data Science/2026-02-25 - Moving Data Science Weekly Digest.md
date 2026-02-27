@@ -1,3 +1,16 @@
+---
+title: Moving Data Science Weekly Digest — 2026-02-25
+date: 2026-02-25T08:00:00+01:00
+public: true
+draft: false
+category: Work
+tags:
+  - moving-data-science
+  - process-mining
+  - ai
+excerpt: Weekly Moving Data Science digest with practical enterprise AI and process mining signals.
+---
+
 # Moving Data Science
 **Published when there are meaningful shifts worth your weekly attention**
 
