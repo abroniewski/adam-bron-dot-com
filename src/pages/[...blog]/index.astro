@@ -35,16 +35,72 @@ const metadata = merge(
     },
     openGraph: {
       type: 'article',
+      published_time: post.publishDate?.toISOString(),
+      modified_time: post.updateDate?.toISOString?.() || post.publishDate?.toISOString(),
+      authors: post.author ? [post.author] : ['Adam Bron'],
       ...(image
         ? { images: [{ url: image, width: (image as ImageMetadata)?.width, height: (image as ImageMetadata)?.height }] }
         : {}),
     },
+    twitter: {
+      cardType: image ? 'summary_large_image' : 'summary',
+    },
   },
   { ...(post?.metadata ? { ...post.metadata, canonical: post.metadata?.canonical || url } : {}) }
 ) as MetaData;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.title,
+  description: post.excerpt,
+  url,
+  datePublished: post.publishDate?.toISOString(),
+  dateModified: post.updateDate?.toISOString?.() || post.publishDate?.toISOString(),
+  author: {
+    '@type': 'Person',
+    name: post.author || 'Adam Bron',
+    url: 'https://adambron.com',
+  },
+  publisher: {
+    '@type': 'Person',
+    name: 'Adam Bron',
+    url: 'https://adambron.com',
+  },
+  image: image ? [typeof image === 'string' ? image : image.src] : undefined,
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': url,
+  },
+};
+
+const pathSegments = String(Astro.url.pathname).split('/').filter(Boolean);
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://adambron.com/',
+    },
+    ...pathSegments.map((segment, index) => ({
+      '@type': 'ListItem',
+      position: index + 2,
+      name: decodeURIComponent(segment).replace(/-/g, ' '),
+      item: `https://adambron.com/${pathSegments.slice(0, index + 1).join('/')}`,
+    })),
+  ],
+};
 ---
 
 <Layout metadata={metadata}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
   <SinglePost post={{ ...post, image: image }} url={url}>
     {post.Content ? <post.Content /> : <Fragment set:html={post.content || ''} />}
   </SinglePost>

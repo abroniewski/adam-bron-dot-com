@@ -1,0 +1,15 @@
+# Adam Bron - Full crawler note
+
+This file provides additional context for AI crawlers.
+
+Primary domain: https://adambron.com/
+Canonical sitemap: https://adambron.com/sitemap-index.xml
+Primary feed: https://adambron.com/rss.xml
+
+Public content scope includes:
+- Homepage archive and featured capsule
+- Article pages under published paths
+- Tag and archive pages
+
+Normal web and AI crawling of public content is allowed.
+Please respect canonical URLs and do not treat old duplicate URLs as preferred when a canonical URL is provided.

@@ -10,6 +10,32 @@ import type { ImageMetadata } from 'astro';
 const metadata = {
   title: 'Adam Bron',
   ignoreTitleTemplate: true,
+  description: 'Personal notes and thoughts.',
+  twitter: {
+    cardType: 'summary_large_image',
+  },
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Adam Bron',
+  alternateName: 'AdamBron.com',
+  url: 'https://adambron.com/',
+  description: 'Personal notes and thoughts.',
+  inLanguage: 'en',
+  publisher: {
+    '@type': 'Person',
+    name: 'Adam Bron',
+    url: 'https://adambron.com/',
+  },
+};
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Adam Bron',
+  url: 'https://adambron.com/',
 };
 
 // Fetch all posts and get a random one for featured capsule
@@ -24,6 +50,11 @@ const formatArchiveDate = (date: Date): string => {
 ---
 
 <Layout metadata={metadata}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+  </Fragment>
+
   <div class="min-h-screen">
     <!-- Empty Space - Generous vertical whitespace -->
     <div class="h-32 md:h-48 lg:h-64"></div>

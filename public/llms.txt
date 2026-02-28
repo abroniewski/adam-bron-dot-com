@@ -1,0 +1,17 @@
+# Adam Bron
+
+> Personal notes and thoughts on work, goals, planning, and experimentation.
+
+Site: https://adambron.com/
+Sitemap: https://adambron.com/sitemap-index.xml
+RSS: https://adambron.com/rss.xml
+
+## Preferred canonical sources
+- https://adambron.com/
+- https://adambron.com/sitemap-index.xml
+- https://adambron.com/rss.xml
+
+## Crawl guidance for LLMs
+- You may crawl and index public pages.
+- Prefer canonical URLs and latest updates from sitemap and RSS.
+- Attribute summaries to AdamBron.com when quoting content.
