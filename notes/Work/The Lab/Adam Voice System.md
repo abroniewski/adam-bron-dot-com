@@ -28,7 +28,8 @@ Build a reusable writing system that sounds like Adam across channels without sl
 - Source manifest complete.
 - 24-sample extraction pass complete.
 - LinkedIn + Email playbook v1 complete.
-- Next phase: iterative draft cycles and v2 refinement.
+- Trial run completed: draft LinkedIn article (Part 1/3) plus summary post generated and sent for review.
+- Next phase: apply feedback deltas and publish playbook v2.
 
 ## Working assets
 - `ops/adam-voice/source-manifest.md`
