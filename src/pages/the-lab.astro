@@ -7,6 +7,14 @@ const metadata = {
 
 const projects = [
   {
+    name: 'Adam Voice System + Operating Tools',
+    url: '/work/lab-adam-voice-and-operating-systems',
+    description:
+      'Detailed breakdown of the Adam-voice project plus active systems like daily digests, LinkedIn ops, and Railway lab publishing.',
+    tag: 'System Card',
+    internal: true,
+  },
+  {
     name: 'Ops Kanban',
     url: 'https://opskanban.adambron.com',
     description:
@@ -51,7 +59,7 @@ const projects = [
         <article class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/40 p-5">
           <div class="flex items-center justify-between gap-3 mb-3">
             <h2 class="text-xl font-medium">
-              <a href={project.url} target="_blank" rel="noopener noreferrer" class="hover:underline">
+              <a href={project.url} target={project.internal ? undefined : '_blank'} rel={project.internal ? undefined : 'noopener noreferrer'} class="hover:underline">
                 {project.name}
               </a>
             </h2>
@@ -60,8 +68,8 @@ const projects = [
           <p class="text-muted dark:text-slate-400 mb-4 leading-relaxed">{project.description}</p>
           <a
             href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={project.internal ? undefined : '_blank'}
+            rel={project.internal ? undefined : 'noopener noreferrer'}
             class="inline-flex items-center text-primary hover:underline break-all"
           >
             {project.url}
