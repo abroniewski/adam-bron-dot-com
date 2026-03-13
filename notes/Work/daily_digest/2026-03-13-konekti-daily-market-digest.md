@@ -34,3 +34,4 @@ Two practical signals: programmable transformation in Fabric strengthens machine
 8. https://www.reuters.com/business/ai-contract-restrictions-could-threaten-military-missions-us-official-says-2026-03-03/
 9. https://www.prnewswire.com/news-releases/industry-study-cpos-are-taking-charge-of-ai-risk-and-growth-in-2026-302703015.html
 10. https://portal.sina.com.hk/finance/finance-mediaoutreachnewswire/media-outreach/2026/03/04/1577740/cardumen-capital-strengthens-global-reach-through-its-taipei-based-apac-partner-following-nvidias-acquisition-of-its-portfolio-company-illumex/
+_Run note: duplicate-send protection check executed on rerun; existing sent message found for this date._
