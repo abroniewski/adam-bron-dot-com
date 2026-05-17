@@ -108,3 +108,20 @@ The tension among our group escalated—especially with Kai’s reckless behavio
 - Avenge my parents by defeating the [[Fire Djinn]]
 - Stop or restore “him” (a mystery yet to be solved)
 - Convince the town to feed [[Norsu]] the mammoth
+
+---
+
+From Termaline mines:
+- Lost control briefly (fire breath)
+- Almost harmed party significantly
+- Dream:
+    - Parents replaced by party
+- Revealed:
+    - Identity instability (not truly “Sam”)
+
+**Add:**
+
+- Internal fear of:
+    - Power
+    - Exposure
+- Increasing dependence on group

@@ -58,3 +58,20 @@ Now, Myra is a changed person. Her heart is still filled with love, but she no l
 Her feelings for Lorien remain complicated. He was the first person she truly allowed herself to love in years, and the pain of his betrayal is something she cannot simply let go of. Does she still love him? Is there a part of her that hopes he will come back, apologizing, or is it just the memory of the warmth he once showed her that lingers? Regardless, Myra knows she cannot dwell on the past, for her sister’s future is at stake.
 
 Myra's sister is being held hostage. By the feydark.
+
+During the Termaline mines session:
+- Took leadership role in crisis
+- Used:
+    - Command
+    - Ritual magic
+- Accepted **[[Kai]]'s power**
+
+Internal shift:
+
+- From seeker → protector
+- From emotional → responsible
+
+**Add:**
+
+- Temptation: power could save her sister
+- Burden: now holds more than she should

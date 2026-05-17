@@ -74,3 +74,35 @@ To align chardalyn with your story, decide whether you want it to:
 ### **Conclusion**
 Chardalyn is not implicitly "bad" but is portrayed as **dangerous and highly corruptible** due to Auril’s influence. You can adapt it to fit your campaign’s tone:
 - Present it as morally gray to explore themes of temptation and responsibility.
+
+---
+
+From Termaline Mines
+
+### New Understanding
+
+- Amplifies:
+    - Magic
+    - Emotion
+    - Intent
+- Induces:
+    - Whispers
+    - Compulsion
+    - Identity erosion
+- Can:
+    - Be channelled (Myra + Emerald ritual)
+    - Be resisted (Kairn, partially)
+    - Be transferred (Kai → Myra)
+
+### New Capabilities
+
+- Acts as a **networked system**
+- Responds to:
+    - Moonlight
+    - The Weave
+    - User intent
+
+### Danger Level
+
+- High
+- Scales with exposure and usage

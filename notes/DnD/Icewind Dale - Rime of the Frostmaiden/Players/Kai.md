@@ -6,7 +6,8 @@ tags:
   - player
 ---
 student from [[Strixhaven]]
-- sorcerer
+- no longer sorcerer (gave that up to [[Myra]])
+-  arcane archer
 - tiefling
 
 ---
@@ -87,3 +88,23 @@ He has an older sister, younger brother died. Was Kai’s fault. 
 Kai has a temper and less control of his magic than he wants. Anger management and impulse control. Little brother ([[Rowan]])  was very sick, Kai got no attention as a child. Bitter. Older sister ([[Lysandra]]) picked on Kai. 
 
 Relationship with [[Sam]]: projection of little brother. Want to keep him safe. Envy because Sam is so controlled. Do think he needs to let go sometimes. Afraid seeking power will end up destroying or changing the goodness in Sam.
+
+---
+From Termaline mines:
+- Turned on party under influence
+- Was halted by Myra
+- Made **defining decision**:
+    - Gave up magic
+    - Transferred power to Myra
+
+Motivation:
+
+- Guilt
+- Desire for control
+- Fear of becoming dangerous
+
+**Add:**
+
+- Identity reset
+- Path toward discipline (archer / fighter)
+- Potential regret later

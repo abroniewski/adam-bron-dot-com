@@ -284,3 +284,17 @@ We **climb into the hill** through Kai’s hole (_ugh_), and Sam and Tiira immed
 Just goes to show **how badly Myra and Sam want to keep the people of Icewind Dale safe**.
 
 Now, it’s up to **me and Kai** to deal with this…
+
+---
+From Termaline mines session:
+- Anchored ritual emotionally and magically
+- Vision of grove expanded to include party
+- Demonstrated:
+    - Balance
+    - Growth
+    - Control
+
+**Add:**
+
+- Moving from outsider → core stabiliser
+- Increasing connection to land and group
