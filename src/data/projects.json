@@ -1,0 +1,760 @@
+[
+  {
+    "slug": "abroniewski--CoverLetter-Generator",
+    "full_name": "abroniewski/CoverLetter-Generator",
+    "name": "Automated cover letters with GPT-3.5",
+    "github_url": "https://github.com/abroniewski/CoverLetter-Generator",
+    "private": false,
+    "topics": [],
+    "one_liner": "This program is designed to automatically generate cover letters for multiple job advertisements using the OpenAI GPT-3.5 API.",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 9,
+    "readme_source": "existing",
+    "last_active_at": "2023-06-15",
+    "last_active_commit": "9778a76"
+  },
+  {
+    "slug": "abroniewski--GPT-Assistant",
+    "full_name": "abroniewski/GPT-Assistant",
+    "name": "Train ChatGPT on your own documents",
+    "github_url": "https://github.com/abroniewski/GPT-Assistant",
+    "private": false,
+    "topics": [],
+    "one_liner": "This project aims to train OpenAI's ChatGPT using local documents and develop prompts to generate desired results. It provides a flexible and collaborative environment for training and experimenting with ChatGPT.",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 9,
+    "readme_source": "existing",
+    "last_active_at": "2023-05-21",
+    "last_active_commit": "db53488"
+  },
+  {
+    "slug": "abroniewski--Heart-Disease-Machine-Learning-Exploration",
+    "full_name": "abroniewski/Heart-Disease-Machine-Learning-Exploration",
+    "name": "Predicting heart disease with machine learning",
+    "github_url": "https://github.com/abroniewski/Heart-Disease-Machine-Learning-Exploration",
+    "private": false,
+    "topics": [
+      "bdma",
+      "decision-trees",
+      "heartdisease",
+      "logistic-regression",
+      "machine-learning",
+      "neural-network",
+      "random-forest",
+      "uci"
+    ],
+    "one_liner": "A comprehensive exploration of machine learning techniques and data science best practices applied to the UCI Heart Disease dataset.",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [
+      "Bdma",
+      "Decision Trees",
+      "Heartdisease",
+      "Logistic Regression",
+      "Machine Learning",
+      "Neural Network",
+      "Random Forest",
+      "Uci"
+    ],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 9,
+    "readme_source": "existing",
+    "last_active_at": "2024-05-23",
+    "last_active_commit": "8006034"
+  },
+  {
+    "slug": "abroniewski--Knowledge-Graph-Distributed-Processing",
+    "full_name": "abroniewski/Knowledge-Graph-Distributed-Processing",
+    "name": "Distributed graph processing with Spark",
+    "github_url": "https://github.com/abroniewski/Knowledge-Graph-Distributed-Processing",
+    "private": false,
+    "topics": [],
+    "one_liner": "Exploring the capabilities of distributed graph processing using Spark GraphX and Graph Frames",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 9,
+    "readme_source": "existing",
+    "last_active_at": "2022-04-27",
+    "last_active_commit": "c88e9ca"
+  },
+  {
+    "slug": "abroniewski--Child-Wasting-Prediction",
+    "full_name": "abroniewski/Child-Wasting-Prediction",
+    "name": "Improving child wasting forecasts for Zero Hunger Labs",
+    "github_url": "https://github.com/abroniewski/Child-Wasting-Prediction",
+    "private": false,
+    "topics": [],
+    "one_liner": "",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 8,
+    "readme_source": "existing",
+    "last_active_at": "2022-10-22",
+    "last_active_commit": "0f19f20"
+  },
+  {
+    "slug": "abroniewski--github-stargazer-analysis",
+    "full_name": "abroniewski/github-stargazer-analysis",
+    "name": "GitHub stargazer analytics for any repository",
+    "github_url": "https://github.com/abroniewski/github-stargazer-analysis",
+    "private": false,
+    "topics": [],
+    "one_liner": "This Python project fetches, analyzes, and presents data from GitHub users who have starred a specific repository.",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [
+      "Python",
+      "Pandas",
+      "OpenAI API",
+      "Neo4j"
+    ],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 8,
+    "readme_source": "existing",
+    "last_active_at": "2023-06-29",
+    "last_active_commit": "282cedb"
+  },
+  {
+    "slug": "abroniewski--Jira-Dataset-Time-Estimate-Study",
+    "full_name": "abroniewski/Jira-Dataset-Time-Estimate-Study",
+    "name": "How accurate are Jira time estimates?",
+    "github_url": "https://github.com/abroniewski/Jira-Dataset-Time-Estimate-Study",
+    "private": false,
+    "topics": [],
+    "one_liner": "Statistical analysis (ANOVA) is completed on data from Jira to determine the accuracy of time estimation for different project types and identify if there are characteristics of issues that result in more or less accurat…",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 8,
+    "readme_source": "existing",
+    "last_active_at": "2023-02-03",
+    "last_active_commit": "5d59b22"
+  },
+  {
+    "slug": "abroniewski--portfolio-website",
+    "full_name": "abroniewski/portfolio-website",
+    "name": "Interactive portfolio with a force-directed graph",
+    "github_url": "https://github.com/abroniewski/portfolio-website",
+    "private": false,
+    "topics": [],
+    "one_liner": "An interactive portfolio website featuring a force-directed graph for content exploration. Built with React and D3.",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [
+      "React + D3.js (Frontend)",
+      "Django (Backend)",
+      "PostgreSQL (Database)",
+      "Poetry (Python dependency management)"
+    ],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 8,
+    "readme_source": "existing",
+    "last_active_at": "2025-02-24",
+    "last_active_commit": "99ce00d"
+  },
+  {
+    "slug": "abroniewski--Research-Paper-Graph-Modeling",
+    "full_name": "abroniewski/Research-Paper-Graph-Modeling",
+    "name": "Exploring research papers as a knowledge graph",
+    "github_url": "https://github.com/abroniewski/Research-Paper-Graph-Modeling",
+    "private": false,
+    "topics": [
+      "heart-disease",
+      "machine-learning",
+      "python",
+      "scikit-learn",
+      "stratification",
+      "uci",
+      "uci-dataset"
+    ],
+    "one_liner": "The goal of this project is to explore the use of neo4j as a graph database management system, understand how the data storage impacts query performance and make use of build in algorithms.",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [
+      "Heart Disease",
+      "Machine Learning",
+      "Python",
+      "Scikit Learn",
+      "Stratification",
+      "Uci",
+      "Uci Dataset"
+    ],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 8,
+    "readme_source": "existing",
+    "last_active_at": "2022-03-28",
+    "last_active_commit": "560bc8c"
+  },
+  {
+    "slug": "abroniewski--IdleCompute-Data-Management-Architecture",
+    "full_name": "abroniewski/IdleCompute-Data-Management-Architecture",
+    "name": "Big data pipeline with PySpark and MLlib",
+    "github_url": "https://github.com/abroniewski/IdleCompute-Data-Management-Architecture",
+    "private": false,
+    "topics": [
+      "bdma",
+      "big-data",
+      "big-data-analytics",
+      "bigdata",
+      "dataops",
+      "hadoop-hdfs",
+      "machine-learning",
+      "parquet",
+      "pipeline",
+      "pyspark-mllib"
+    ],
+    "one_liner": "Implementation of a big data management and analysis backbone architecture using PySpark for distributed and scalable data ingestion and MLlib for machine learning analysis.",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [
+      "Bdma",
+      "Big Data",
+      "Big Data Analytics",
+      "Bigdata",
+      "Dataops",
+      "Hadoop Hdfs",
+      "Machine Learning",
+      "Parquet"
+    ],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 7,
+    "readme_source": "existing",
+    "last_active_at": "2022-07-12",
+    "last_active_commit": "700be42"
+  },
+  {
+    "slug": "abroniewski--LLM-model",
+    "full_name": "abroniewski/LLM-model",
+    "name": "Chat with local Ollama models in the browser",
+    "github_url": "https://github.com/abroniewski/LLM-model",
+    "private": false,
+    "topics": [],
+    "one_liner": "A simple, instructional web UI to chat with your Ollama LLM models using Streamlit. This project is designed for learning, experimentation, and local privacy.",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [
+      "Python",
+      "Streamlit"
+    ],
+    "project_type": "Unknown",
+    "status": "Unknown",
+    "readme_score": 7,
+    "readme_source": "existing",
+    "last_active_at": "2025-05-30",
+    "last_active_commit": "fa3c880"
+  },
+  {
+    "slug": "abroniewski--Longitudinal-Data-Analysis-Exercises",
+    "full_name": "abroniewski/Longitudinal-Data-Analysis-Exercises",
+    "name": "Longitudinal analysis exercises in SAS",
+    "github_url": "https://github.com/abroniewski/Longitudinal-Data-Analysis-Exercises",
+    "private": false,
+    "topics": [],
+    "one_liner": "Completed exercises for the Longitudinal Data Analysis course at Technical University Eindhoven (TU/e), following the 2022 Q1 curriculum. Implemented in SAS.",
+    "problem_bullets": [
+      "Longitudinal data analysis covers techniques for modelling repeated measurements over time — a topic not covered in standard statistics curricula.",
+      "Course exercises required working with mixed models, variance components, and repeated-measures ANOVA in SAS.",
+      "Sharing completed exercises with documentation helps others learning the same material."
+    ],
+    "value_bullets": [
+      "Fully worked exercises with explanatory comments for each statistical technique covered.",
+      "Practical SAS code for mixed models, variance component analysis, and repeated-measures ANOVA.",
+      "Useful reference for students taking the same or similar courses."
+    ],
+    "tech_stack": [
+      "SAS",
+      "SAS OnDemand for Academics (free student licence)"
+    ],
+    "project_type": "Academic learning exercises",
+    "status": "Archived",
+    "readme_score": 6,
+    "readme_source": "generated",
+    "last_active_at": "2022-09-27",
+    "last_active_commit": "31923b3"
+  },
+  {
+    "slug": "abroniewski--Advent-of-Code",
+    "full_name": "abroniewski/Advent-of-Code",
+    "name": "2021 Advent of Code solutions in Python",
+    "github_url": "https://github.com/abroniewski/Advent-of-Code",
+    "private": false,
+    "topics": [],
+    "one_liner": "My solutions to the 2021 [Advent of Code](https://www.adventofcode.com) daily programming challenges, written in Python.",
+    "problem_bullets": [
+      "Advent of Code is a series of daily programming puzzles released each December, each requiring a different algorithmic or logical approach.",
+      "The 2021 challenges cover topics such as binary parsing, pathfinding, data simulation, and geometric computation.",
+      "Working through them provides structured practice in algorithmic thinking and clean Python implementation."
+    ],
+    "value_bullets": [
+      "2021 Advent of Code challenges solved with documented reasoning for each solution.",
+      "Serves as a personal log of learning progress across algorithmic problem types.",
+      "Useful reference for anyone working through the same challenges."
+    ],
+    "tech_stack": [
+      "Python",
+      "Python scripts"
+    ],
+    "project_type": "Learning / personal practice",
+    "status": "Archived",
+    "readme_score": 5,
+    "readme_source": "generated",
+    "last_active_at": "2022-12-12",
+    "last_active_commit": "cd7a9fd"
+  },
+  {
+    "slug": "abroniewski--TPC-DI-MS-SQL-Benchmark",
+    "full_name": "abroniewski/TPC-DI-MS-SQL-Benchmark",
+    "name": "Benchmarking SQL Server for data integration workloads",
+    "github_url": "https://github.com/abroniewski/TPC-DI-MS-SQL-Benchmark",
+    "private": false,
+    "topics": [
+      "bdma",
+      "benchmark",
+      "data-engineering",
+      "database-management",
+      "dataops",
+      "ms-sql-server",
+      "mssql",
+      "sql",
+      "tpc-di",
+      "tpc-ds",
+      "tpc-ds-benchmark"
+    ],
+    "one_liner": "Benchmarking Microsoft SQL Server using the TPC-DI (Data Integration) industry standard, with a full ETL pipeline implemented in T-SQL and SSIS.",
+    "problem_bullets": [
+      "Choosing a database platform for data warehouse workloads requires objective, reproducible performance data.",
+      "The TPC-DI benchmark is the first industry-standard benchmark specifically designed for data integration (ETL) workloads.",
+      "Running the benchmark end-to-end on MS SQL Server required building a full extract, transform, and load pipeline from raw TPC-generated files."
+    ],
+    "value_bullets": [
+      "End-to-end TPC-DI benchmark run on MS SQL Server 2019 across four scale factors.",
+      "Reusable ETL scripts for staging and transforming TPC-DI data in SQL Server.",
+      "Written report documenting methodology, data quality issues encountered, and results."
+    ],
+    "tech_stack": [
+      "Microsoft SQL Server 2019 Express",
+      "SSIS (SQL Server Integration Services)",
+      "T-SQL",
+      "Python",
+      "Tableau",
+      "TPC-DI"
+    ],
+    "project_type": "Academic research / benchmarking",
+    "status": "Archived",
+    "readme_score": 5,
+    "readme_source": "generated",
+    "last_active_at": "2021-12-22",
+    "last_active_commit": "18eca39"
+  },
+  {
+    "slug": "Moving-Data-Insights--traffic-flow-analysis",
+    "full_name": "Moving-Data-Insights/traffic-flow-analysis",
+    "name": "Analysing traffic movement with maps and dashboards",
+    "github_url": "https://github.com/Moving-Data-Insights/traffic-flow-analysis",
+    "private": false,
+    "topics": [],
+    "one_liner": "Spatiotemporal traffic flow analysis using MobilityDB, Jupyter, and Grafana — querying and visualising movement data stored in a PostgreSQL/MobilityDB database.",
+    "problem_bullets": [
+      "Traditional relational databases handle static data well but struggle with time-evolving spatial objects such as vehicle trajectories.",
+      "MobilityDB extends PostgreSQL with native temporal-spatial types, enabling SQL queries over moving objects without pre-aggregating the data.",
+      "Analysing traffic flow patterns requires both a capable data store and an accessible visualisation layer."
+    ],
+    "value_bullets": [
+      "Demonstrates end-to-end spatiotemporal analysis workflow using MobilityDB.",
+      "Shows how to combine Jupyter SQL notebooks and Grafana against the same containerised database.",
+      "Practical reference for anyone exploring MobilityDB for movement data."
+    ],
+    "tech_stack": [
+      "MobilityDB (PostgreSQL extension)",
+      "via Docker",
+      "Grafana (Docker container)",
+      "Python",
+      "Jupyter Notebook",
+      "JupySQL",
+      "SQLAlchemy",
+      "psycopg2",
+      "Pandas",
+      "NumPy"
+    ],
+    "project_type": "Research / internal tool",
+    "status": "Paused",
+    "readme_score": 2,
+    "readme_source": "generated",
+    "last_active_at": "2024-10-15",
+    "last_active_commit": "2b2e0a9"
+  },
+  {
+    "slug": "abroniewski--adam-bron-dot-com",
+    "full_name": "abroniewski/adam-bron-dot-com",
+    "name": "Personal site built with Astro",
+    "github_url": "https://github.com/abroniewski/adam-bron-dot-com",
+    "private": false,
+    "topics": [],
+    "one_liner": "Personal website for Adam Broniewski, built with Astro and Tailwind CSS.",
+    "problem_bullets": [
+      "A static portfolio website was needed that is fast, easy to maintain, and does not require a backend.",
+      "WordPress and similar CMS platforms add unnecessary overhead for a personal site.",
+      "The site needed to support content-driven pages with a clear design system."
+    ],
+    "value_bullets": [
+      "Zero-runtime-cost static site with fast page loads.",
+      "Typed content collections reduce authoring errors.",
+      "Tailwind-based design system makes visual updates consistent and quick."
+    ],
+    "tech_stack": [
+      "Astro",
+      "Tailwind CSS",
+      "TypeScript",
+      "Node.js 18+"
+    ],
+    "project_type": "Personal website",
+    "status": "Active",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2026-05-17",
+    "last_active_commit": "daa7508"
+  },
+  {
+    "slug": "abroniewski--Covid_Visualization",
+    "full_name": "abroniewski/Covid_Visualization",
+    "name": "Visualising early COVID-19 case trends",
+    "github_url": "https://github.com/abroniewski/Covid_Visualization",
+    "private": false,
+    "topics": [],
+    "one_liner": "A guided DataCamp project to visualise early COVID-19 case data using Python.",
+    "problem_bullets": [
+      "Early in the pandemic, making sense of rapidly changing case data required quick, accessible visualisation.",
+      "Raw datasets from public health sources were not presented in a form suitable for comparison across countries or time periods."
+    ],
+    "value_bullets": [
+      "Hands-on practice with real-world, time-series public health data.",
+      "Demonstrates basic data wrangling and visualisation skills in Python."
+    ],
+    "tech_stack": [
+      "Python",
+      "Pandas",
+      "Matplotlib (DataCamp environment)",
+      "Jupyter Notebook"
+    ],
+    "project_type": "Learning exercise (guided DataCamp project)",
+    "status": "Archived",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2021-02-28",
+    "last_active_commit": "865845a"
+  },
+  {
+    "slug": "abroniewski--file-share",
+    "full_name": "abroniewski/file-share",
+    "name": "Public file sharing via GitHub",
+    "github_url": "https://github.com/abroniewski/file-share",
+    "private": false,
+    "topics": [],
+    "one_liner": "A repository used to share files publicly via GitHub — currently containing a pitch deck PDF.",
+    "problem_bullets": [
+      "Sharing large files or documents without requiring recipients to have access to a specific cloud storage service.",
+      "GitHub provides a stable, publicly accessible URL for any file in a public repository."
+    ],
+    "value_bullets": [],
+    "tech_stack": [],
+    "project_type": "File hosting convenience repo",
+    "status": "Active",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2024-09-27",
+    "last_active_commit": "e81f41d"
+  },
+  {
+    "slug": "abroniewski--HackUPC2022-Mundimonto",
+    "full_name": "abroniewski/HackUPC2022-Mundimonto",
+    "name": "HackUPC analysis of motorcycle market data",
+    "github_url": "https://github.com/abroniewski/HackUPC2022-Mundimonto",
+    "private": false,
+    "topics": [],
+    "one_liner": "Hackathon project from HackUPC 2022 — data analysis on a motorcycle dataset provided by Mundimoto.",
+    "problem_bullets": [
+      "Mundimoto provided a real-world dataset of motorcycle listings and sales data as a hackathon challenge.",
+      "The challenge required extracting insights and building something useful from the data within a 36-hour event."
+    ],
+    "value_bullets": [
+      "Demonstrated ability to rapidly explore and analyse an unfamiliar dataset under time pressure.",
+      "Produced actionable findings within the hackathon timeframe."
+    ],
+    "tech_stack": [
+      "Python",
+      "Jupyter Notebook",
+      "CSV"
+    ],
+    "project_type": "Hackathon project (HackUPC 2022)",
+    "status": "Archived",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2022-04-30",
+    "last_active_commit": "96de548"
+  },
+  {
+    "slug": "abroniewski--Knowledge-Graphs-BDMA-Project3",
+    "full_name": "abroniewski/Knowledge-Graphs-BDMA-Project3",
+    "name": "Querying research papers as a knowledge graph",
+    "github_url": "https://github.com/abroniewski/Knowledge-Graphs-BDMA-Project3",
+    "private": false,
+    "topics": [
+      "data-model",
+      "database",
+      "graph",
+      "neo4j",
+      "owl-ontology",
+      "property-graph",
+      "rdf"
+    ],
+    "one_liner": "A knowledge graph built on top of a research paper dataset to make querying more accessible for users unfamiliar with the underlying data structure.",
+    "problem_bullets": [
+      "Research paper databases are often stored as flat or relational structures that are hard to explore without knowing the schema.",
+      "Querying relationships between authors, papers, venues, and topics requires complex SQL joins that are not intuitive for non-technical users.",
+      "A graph model can expose these connections naturally and support more expressive queries."
+    ],
+    "value_bullets": [
+      "Demonstrates a graph-native approach to academic data that reduces query complexity.",
+      "Covers both property graph (Neo4j) and semantic web (RDF/OWL) modelling approaches.",
+      "Useful reference for anyone learning knowledge graph construction from relational source data."
+    ],
+    "tech_stack": [
+      "Neo4j",
+      "Property Graph",
+      "RDF",
+      "OWL ontology",
+      "Python / Cypher",
+      "`data-model`",
+      "`graph`",
+      "`neo4j`",
+      "`owl-ontology`",
+      "`rdf`"
+    ],
+    "project_type": "Academic project (BDMA programme)",
+    "status": "Archived",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2022-05-26",
+    "last_active_commit": "2d98db9"
+  },
+  {
+    "slug": "abroniewski--powerpoint-generator",
+    "full_name": "abroniewski/powerpoint-generator",
+    "name": "Generate slide decks from a text template",
+    "github_url": "https://github.com/abroniewski/powerpoint-generator",
+    "private": false,
+    "topics": [],
+    "one_liner": "A Python tool that generates PowerPoint presentations from a plain-text template, with synthetic student data generation for testing.",
+    "problem_bullets": [
+      "Creating slide decks with repeated or data-driven content by hand is slow and error-prone.",
+      "A programmatic approach allows slides to be generated consistently from a structured template, useful for reports or standardised presentations."
+    ],
+    "value_bullets": [
+      "Reduces slide creation time for reports with structured, repeating content.",
+      "Template-driven approach means non-developers can control content without touching Python code.",
+      "Synthetic data generator supports testing without using real data."
+    ],
+    "tech_stack": [
+      "Python",
+      "python-pptx",
+      "Plain text template"
+    ],
+    "project_type": "Internal utility / learning tool",
+    "status": "Archived",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2023-09-27",
+    "last_active_commit": "36b9656"
+  },
+  {
+    "slug": "abroniewski--predicting-grocery-sales",
+    "full_name": "abroniewski/predicting-grocery-sales",
+    "name": "Grocery sales forecasting with machine learning",
+    "github_url": "https://github.com/abroniewski/predicting-grocery-sales",
+    "private": false,
+    "topics": [],
+    "one_liner": "Sales forecasting for grocery items using machine learning, built during HackUPC.",
+    "problem_bullets": [
+      "Grocery retailers need accurate sales forecasts to manage stock levels and reduce waste.",
+      "Manual forecasting is slow and does not scale across a large product catalogue.",
+      "Time-series prediction for perishable goods requires handling seasonality and irregular demand patterns."
+    ],
+    "value_bullets": [
+      "Demonstrates applied time-series forecasting on a real retail dataset.",
+      "Covers the full pipeline from raw data to model evaluation."
+    ],
+    "tech_stack": [
+      "Python 3.6",
+      "Pandas",
+      "TensorFlow",
+      "Matplotlib",
+      "Seaborn",
+      "scikit-learn",
+      "Jupyter Notebook"
+    ],
+    "project_type": "Hackathon / learning project",
+    "status": "Archived",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2022-05-01",
+    "last_active_commit": "999ee08"
+  },
+  {
+    "slug": "abroniewski--simple-notes-app",
+    "full_name": "abroniewski/simple-notes-app",
+    "name": "Full-stack notes app with Next.js and Supabase",
+    "github_url": "https://github.com/abroniewski/simple-notes-app",
+    "private": false,
+    "topics": [],
+    "one_liner": "A minimal notes app built with Next.js and Supabase, used as a learning project for full-stack TypeScript development.",
+    "problem_bullets": [
+      "Building and deploying a full-stack web application requires understanding how a frontend, API layer, and database interact.",
+      "A simple CRUD application provides a focused scope for practising Next.js App Router patterns and Supabase integration without incidental complexity."
+    ],
+    "value_bullets": [
+      "Working end-to-end example of Next.js + Supabase integration with TypeScript.",
+      "Demonstrates API route construction, Supabase client usage, and basic state management in React."
+    ],
+    "tech_stack": [
+      "Next.js (App Router)",
+      "React",
+      "Tailwind CSS",
+      "Next.js API routes",
+      "Supabase (PostgreSQL)",
+      "TypeScript"
+    ],
+    "project_type": "Learning project",
+    "status": "Paused",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2025-04-28",
+    "last_active_commit": "d790123"
+  },
+  {
+    "slug": "abroniewski--simple-notes-app-2",
+    "full_name": "abroniewski/simple-notes-app-2",
+    "name": "Second iteration of a notes learning app",
+    "github_url": "https://github.com/abroniewski/simple-notes-app-2",
+    "private": false,
+    "topics": [],
+    "one_liner": "A second iteration of the simple notes app learning project.",
+    "problem_bullets": [],
+    "value_bullets": [],
+    "tech_stack": [],
+    "project_type": "Learning project",
+    "status": "Unknown",
+    "readme_score": 0,
+    "readme_source": "generated"
+  },
+  {
+    "slug": "abroniewski--SQLBenchmark",
+    "full_name": "abroniewski/SQLBenchmark",
+    "name": "Comparing SQL Server on industry benchmarks",
+    "github_url": "https://github.com/abroniewski/SQLBenchmark",
+    "private": false,
+    "topics": [],
+    "one_liner": "Evaluating Microsoft SQL Server performance using TPC-DS (Decision Support) and TPC-DI (Data Integration) benchmarks.",
+    "problem_bullets": [
+      "Selecting a database platform for analytical workloads requires objective performance evidence, not vendor claims.",
+      "TPC benchmarks provide a standardised, reproducible methodology for comparing query throughput and data loading performance.",
+      "Establishing a performance baseline for MS SQL Server informs architecture decisions for data warehouse projects."
+    ],
+    "value_bullets": [
+      "Provides reproducible benchmark results for MS SQL Server on the TPC-DS and TPC-DI suites.",
+      "Supports data platform selection decisions with empirical performance data."
+    ],
+    "tech_stack": [
+      "Microsoft SQL Server",
+      "T-SQL",
+      "TPC-DS",
+      "TPC-DI"
+    ],
+    "project_type": "Research / academic benchmarking",
+    "status": "Archived",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2021-11-16",
+    "last_active_commit": "cae8c04"
+  },
+  {
+    "slug": "abroniewski--STIB-Hach-My-Ride",
+    "full_name": "abroniewski/STIB-Hach-My-Ride",
+    "name": "Mapping Brussels public transport patterns",
+    "github_url": "https://github.com/abroniewski/STIB-Hach-My-Ride",
+    "private": false,
+    "topics": [],
+    "one_liner": "Geospatial analysis of Brussels public transport (STIB) data — a hackathon or academic project exploring mobility patterns and route analysis.",
+    "problem_bullets": [
+      "Public transport usage data contains rich spatial and temporal patterns that are not visible from raw trip records alone.",
+      "Analysing STIB (Brussels transit network) data requires handling geospatial formats, coordinate projections, and large tabular datasets efficiently."
+    ],
+    "value_bullets": [
+      "Demonstrates geospatial data analysis skills using real public transport data.",
+      "Haversine distance calculations enable stop-to-stop travel time and distance analysis.",
+      "Useful as a reference for transit data analysis in Python."
+    ],
+    "tech_stack": [
+      "Python 3.9",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "pyshp",
+      "pyproj",
+      "tqdm",
+      "Jupyter Notebooks"
+    ],
+    "project_type": "Hackathon / learning project",
+    "status": "Archived",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2021-12-20",
+    "last_active_commit": "14ed4c1"
+  },
+  {
+    "slug": "abroniewski--thrive-flow",
+    "full_name": "abroniewski/thrive-flow",
+    "name": "Daily planning, habits, and reflection in one app",
+    "github_url": "https://github.com/abroniewski/thrive-flow",
+    "private": false,
+    "topics": [],
+    "one_liner": "A productivity and mindfulness app designed to help users plan their day, track habits, reflect on progress, and gain insights into their routines.",
+    "problem_bullets": [
+      "Most productivity apps focus on task completion but ignore the connection between daily habits and personal wellbeing.",
+      "Users who want to plan their day, track habits, and reflect on progress often need three separate tools.",
+      "There is no lightweight app that combines structured daily planning with mindfulness-oriented reflection in one place."
+    ],
+    "value_bullets": [
+      "Reduces the number of tools needed to manage daily productivity and wellbeing.",
+      "Brings habit data and daily reflection into the same context for richer self-insight."
+    ],
+    "tech_stack": [],
+    "project_type": "PoC / early-stage app",
+    "status": "Paused",
+    "readme_score": 0,
+    "readme_source": "generated",
+    "last_active_at": "2025-01-05",
+    "last_active_commit": "5f33868"
+  }
+]

@@ -1,0 +1,217 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import projects from '~/data/projects.json';
+
+const metadata = {
+  title: 'Projects',
+  description: 'Open-source work spanning AI tooling, data engineering, machine learning research, and full-stack applications.',
+};
+
+// Status badge styling
+const statusStyle: Record<string, string> = {
+  Active: 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300',
+  Paused: 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300',
+  Archived: 'bg-slate-100 dark:bg-slate-800 text-muted dark:text-slate-400',
+};
+
+function cleanType(raw: string): string {
+  return raw.replace(/^\*+\s*/, '').trim();
+}
+
+/** Format YYYY-MM-DD as "Mon YYYY" for portfolio cards. */
+function formatLastActive(isoDate: string | undefined): string | null {
+  if (!isoDate) return null;
+  const d = new Date(isoDate + 'T12:00:00Z');
+  if (Number.isNaN(d.getTime())) return null;
+  return d.toLocaleDateString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+}
+---
+
+<Layout metadata={metadata}>
+  <section class="max-w-5xl mx-auto px-6 py-16">
+
+    <!-- Page header -->
+    <div class="mb-10">
+      <h1 class="text-4xl font-semibold mb-3">Projects</h1>
+      <p class="text-muted dark:text-slate-400 text-lg max-w-3xl">
+        Open-source work spanning AI tooling, data engineering, machine learning, and full-stack development.
+        Cards are generated from each repository's README.
+      </p>
+      <div class="mt-4 flex items-center gap-3 text-sm text-muted dark:text-slate-400">
+        <span id="visible-count">{projects.length}</span><span>projects</span>
+        <span>·</span>
+        <a
+          href="https://github.com/abroniewski"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary hover:underline"
+        >github.com/abroniewski</a>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="flex flex-wrap gap-3 mb-8">
+      <div class="relative">
+        <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search projects…"
+          class="pl-9 pr-4 py-2 text-sm rounded-lg border border-gray-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/40 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/30 w-56"
+        />
+      </div>
+      <select
+        id="status-filter"
+        class="text-sm rounded-lg border border-gray-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/40 text-slate-800 dark:text-slate-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary/30"
+      >
+        <option value="">All statuses</option>
+        <option value="Active">Active</option>
+        <option value="Paused">Paused</option>
+        <option value="Archived">Archived</option>
+      </select>
+      <button
+        id="reset-filters"
+        class="text-sm text-muted dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors px-2 py-2"
+      >
+        Clear
+      </button>
+    </div>
+
+    <!-- Cards grid -->
+    <div id="cards-grid" class="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {projects.map((project) => (
+        <article
+          class="project-card rounded-xl border border-gray-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/40 p-5 flex flex-col"
+          data-search={[project.name, project.one_liner, project.value_bullets.join(' '), project.tech_stack.join(' '), cleanType(project.project_type)].join(' ').toLowerCase()}
+          data-status={project.status}
+        >
+          <!-- Title row -->
+          <div class="flex items-start justify-between gap-3 mb-3">
+            <h2 class="text-base font-medium leading-snug">
+              {project.name}
+            </h2>
+            <a
+              href={project.github_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${project.name} on GitHub`}
+              class="flex-shrink-0 text-muted hover:text-primary transition-colors mt-0.5"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Badges -->
+          <div class="flex flex-wrap gap-1.5 mb-3">
+            {project.status && project.status !== 'Unknown' && (
+              <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${statusStyle[project.status] ?? statusStyle['Archived']}`}>
+                {project.status}
+              </span>
+            )}
+            {project.project_type && project.project_type !== 'Unknown' && (
+              <span class="text-xs px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-muted dark:text-slate-300">
+                {cleanType(project.project_type)}
+              </span>
+            )}
+          </div>
+
+          {formatLastActive(project.last_active_at) && (
+            <p class="text-xs text-muted dark:text-slate-500 mb-3">
+              Last active · {formatLastActive(project.last_active_at)}
+            </p>
+          )}
+
+          <!-- One-liner -->
+          {project.one_liner && (
+            <p class="text-muted dark:text-slate-400 text-sm leading-relaxed mb-3">
+              {project.one_liner}
+            </p>
+          )}
+
+          <!-- Value / impact bullets -->
+          {project.value_bullets && project.value_bullets.length > 0 && (
+            <div class="mb-3">
+              <p class="text-xs font-medium text-muted dark:text-slate-500 uppercase tracking-wide mb-1.5">Impact</p>
+              <ul class="space-y-1">
+                {project.value_bullets.slice(0, 3).map((bullet: string) => (
+                  <li class="text-sm text-muted dark:text-slate-400 flex items-start gap-2 leading-snug">
+                    <span class="mt-1.5 w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600 flex-shrink-0"></span>
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <!-- Spacer -->
+          <div class="flex-1" />
+
+          <!-- Tech tags -->
+          {project.tech_stack && project.tech_stack.length > 0 && (
+            <div class="flex flex-wrap gap-1.5 pt-3 mt-2 border-t border-gray-100 dark:border-slate-800">
+              {project.tech_stack.slice(0, 6).map((tech: string) => (
+                <span class="text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-muted dark:text-slate-400">
+                  {tech}
+                </span>
+              ))}
+              {project.tech_stack.length > 6 && (
+                <span class="text-xs px-2 py-0.5 rounded bg-slate-50 dark:bg-slate-800/50 text-muted dark:text-slate-500">
+                  +{project.tech_stack.length - 6}
+                </span>
+              )}
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+
+    <!-- Empty state -->
+    <div id="empty-state" class="hidden text-center py-16">
+      <p class="text-muted dark:text-slate-400 text-lg mb-3">No projects match your filters.</p>
+      <button id="reset-empty" class="text-sm text-primary hover:underline">Clear filters</button>
+    </div>
+
+  </section>
+</Layout>
+
+<script>
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('.project-card'));
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const statusFilter = document.getElementById('status-filter') as HTMLSelectElement;
+  const countEl = document.getElementById('visible-count');
+  const emptyState = document.getElementById('empty-state')!;
+  const grid = document.getElementById('cards-grid')!;
+
+  function applyFilters() {
+    const query = searchInput.value.toLowerCase().trim();
+    const status = statusFilter.value;
+    let visible = 0;
+
+    cards.forEach((card) => {
+      const matchSearch = !query || (card.dataset.search ?? '').includes(query);
+      const matchStatus = !status || card.dataset.status === status;
+      const show = matchSearch && matchStatus;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    if (countEl) countEl.textContent = String(visible);
+    emptyState.classList.toggle('hidden', visible > 0);
+    grid.classList.toggle('hidden', visible === 0);
+  }
+
+  function reset() {
+    searchInput.value = '';
+    statusFilter.value = '';
+    applyFilters();
+  }
+
+  searchInput.addEventListener('input', applyFilters);
+  statusFilter.addEventListener('change', applyFilters);
+  document.getElementById('reset-filters')!.addEventListener('click', reset);
+  document.getElementById('reset-empty')!.addEventListener('click', reset);
+</script>
